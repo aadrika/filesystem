@@ -52,8 +52,25 @@ public class Update1 extends JFrame implements ActionListener{
  
 
           @Override
-            public void actionPerformed(ActionEvent e) {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            public void actionPerformed(ActionEvent e){
+                if(e.getsource == edit)
+                {
+                   Edit ed = new Edit();
+                   ed.setVisible(true);
+                   ed.setSize(300,300);
+                   
+                }
+               else if(e.getsource == attach)
+               { 
+                  Attach at = new Attach();
+                  at.setVisible(true);
+                  at.setSize(300,300);
+               }
+               else (e.getsource == send)
+               {
+                  Send s = new Send();
+                  s.setVisible(true);
+                  s.setSize(300,300);
             }
      
         
