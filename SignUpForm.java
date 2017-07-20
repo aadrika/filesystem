@@ -9,6 +9,6 @@ package Login;
  *
  * @author User
  */
-public class adminDashBoard {
+public class SignUpForm {
     
 }
